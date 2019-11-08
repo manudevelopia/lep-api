@@ -5,9 +5,8 @@ plugins {
 }
 
 
-
 version "0.1"
-group "info.developia"
+group "info.developia.lep"
 
 repositories {
     mavenCentral()
@@ -16,7 +15,7 @@ repositories {
 
 configurations {
     // for dependencies that are needed for development only
-    developmentOnly 
+    developmentOnly
 }
 
 dependencies {
@@ -42,7 +41,7 @@ dependencies {
 
 test.classpath += configurations.developmentOnly
 
-mainClassName = "info.developia.Application"
+mainClassName = "info.developia.lep.Application"
 tasks.withType(GroovyCompile) {
     groovyOptions.forkOptions.jvmArgs.add('-Dgroovy.parameters=true')
 }

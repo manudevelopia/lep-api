@@ -2,6 +2,7 @@ plugins {
     id "groovy"
     id "com.github.johnrengelman.shadow" version "5.0.0"
     id "application"
+    id 'com.google.cloud.tools.jib' version '1.7.0'
 }
 
 
@@ -52,3 +53,5 @@ shadowJar {
 
 run.classpath += configurations.developmentOnly
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1', '-Dcom.sun.management.jmxremote')
+
+jib.to.image = 'manudevelopia/lep-api'

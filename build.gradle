@@ -42,7 +42,7 @@ dependencies {
 
 test.classpath += configurations.developmentOnly
 
-mainClassName = "info.developia.lep.Application"
+mainClassName = "info.developia.lep.api.Application"
 tasks.withType(GroovyCompile) {
     groovyOptions.forkOptions.jvmArgs.add('-Dgroovy.parameters=true')
 }

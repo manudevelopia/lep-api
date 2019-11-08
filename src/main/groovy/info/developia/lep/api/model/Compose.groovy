@@ -1,4 +1,4 @@
-package info.developia.lep.model
+package info.developia.lep.api.model
 
 class Compose {
     String ncas

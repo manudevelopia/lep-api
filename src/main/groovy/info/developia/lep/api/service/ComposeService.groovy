@@ -1,4 +1,4 @@
-package info.developia.lep.service
+package info.developia.lep.api.service
 
 interface ComposeService {
     def getAll()

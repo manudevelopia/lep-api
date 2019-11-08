@@ -1,15 +1,14 @@
-package info.developia.lep.service
+package info.developia.lep.api.service
 
-import info.developia.lep.repository.ComposeRepository
 
 import javax.inject.Singleton
 
 @Singleton
 class ComposeServiceImpl implements ComposeService {
 
-    private final ComposeRepository composeRepository
+    private final info.developia.lep.api.repository.ComposeRepository composeRepository
 
-    ComposeServiceImpl(ComposeRepository composeRepository) {
+    ComposeServiceImpl(info.developia.lep.api.repository.ComposeRepository composeRepository) {
         this.composeRepository = composeRepository
     }
 

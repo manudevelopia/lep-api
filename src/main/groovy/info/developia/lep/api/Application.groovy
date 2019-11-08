@@ -1,4 +1,4 @@
-package info.developia.lep
+package info.developia.lep.api
 
 import io.micronaut.runtime.Micronaut
 import groovy.transform.CompileStatic
